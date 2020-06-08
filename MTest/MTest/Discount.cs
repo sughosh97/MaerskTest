@@ -25,9 +25,9 @@ namespace MTest
                     }
                     else if (o.quantity > com.quantity)
                     {
-                        total += (o.quantity * pr.value) + ((o.quantity - com.quantity) * pr.ProductId.Cost);
+                        total += (com.quantity * pr.value) + ((o.quantity - com.quantity) * pr.ProductId.Cost);
 
-                        order.Find(i => i.ProductName == pr.CombiProct.ProdName).quantity = o.quantity - com.quantity;
+                        order.Find(i => i.ProductName == pr.CombiProct.ProdName).quantity = 0;
                     }
                     else
                     {

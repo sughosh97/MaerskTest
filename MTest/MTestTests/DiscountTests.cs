@@ -33,6 +33,9 @@ namespace MTest.Tests
         [DataRow(5, 5, 1, 0, 370)]
         [DataRow(3, 5, 1, 1, 280)]
         [DataRow(1, 1, 1, 0, 100)]
+        [DataRow(3, 4, 1, 3, 280)]
+        [DataRow(3, 4, 3, 1, 290)]
+
         public void CalculateTest(int qa, int qb, int qc,int qd,double exp)
         {
             List<Order> order = new List<Order>();

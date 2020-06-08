@@ -6,8 +6,6 @@ namespace MTest
 {
     public class Product
     {
-
-
         public Product(string v)
         {
             ProdName = v;
