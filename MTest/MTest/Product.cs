@@ -26,8 +26,6 @@ namespace MTest
 
         private void GetData()
         {
-
-
             Console.WriteLine("Enter the Cost of product:{0}", ProdName);
             while (!double.TryParse(Console.ReadLine(), out Cost))
             {
